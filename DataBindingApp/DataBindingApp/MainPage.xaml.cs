@@ -12,6 +12,15 @@ namespace DataBindingApp
 		public MainPage()
 		{
 			InitializeComponent();
-		}
-	}
+            botonEnviar.Clicked += BotonEnviar_Clicked;
+
+        }
+
+        private void BotonEnviar_Clicked(object sender, EventArgs e)
+        {
+            var per = (Persona)Resources["personaUno"];
+            per.Nombre = "Neymar";
+            per.Pais = "Brasil";
+        }
+    }
 }

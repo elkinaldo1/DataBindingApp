@@ -13,7 +13,7 @@ namespace DataBindingApp
 		{
 			InitializeComponent();
 
-			MainPage = new DataBindingApp.MainPage();
+			MainPage = new DataBindingApp.BindingList();
 		}
 
 		protected override void OnStart ()
